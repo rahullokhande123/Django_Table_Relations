@@ -7,3 +7,10 @@ class Aadhar(models.Model):
     def __str__(self):
         return str(self.aadhar)
     
+class Department(models.Model):
+    dep_name=models.CharField(max_length=50)
+    dep_des=models.TextField()
+    
+    def __str__(self):
+        return str(self.dep_name)
+
