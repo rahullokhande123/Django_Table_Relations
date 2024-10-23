@@ -14,3 +14,9 @@ class Department(models.Model):
     def __str__(self):
         return str(self.dep_name)
 
+class User(models.Model):
+    name=models.CharField(max_length=50)
+    email=models.EmailField()
+    contact=models.IntegerField()
+    aadhar_no=models.OneToOneField(Aadhar,on_delete=models.CASCADE)
+    department_name=models.ForeignKey(Department,on_delete=models.CASCADE,null=True)
