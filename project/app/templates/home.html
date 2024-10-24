@@ -1,7 +1,7 @@
 
 <div align="center">
     <h1>User Form</h1>
-    <form action="">
+    <form action="{% url 'userdata' %}" method="post">
     {% csrf_token %}
         {{user}}
         <button>Submit</button>
@@ -13,7 +13,7 @@
 <div align="center">
 
     <h1>Profile Form</h1>
-    <form action="">
+    <form action="" method="post">
     {% csrf_token %}
         {{profile}}
         <button>Submit</button>
