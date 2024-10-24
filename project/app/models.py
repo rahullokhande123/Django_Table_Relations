@@ -23,3 +23,8 @@ class User(models.Model):
     
     def __str__(self):
         return str(self.name)
+    
+
+quali=((1,"M.Tech"),(2,"B.Tech"),(3,"BCA"),(4,"BBA"))
+
+
