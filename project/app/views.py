@@ -15,3 +15,4 @@ def userdata(request):
         form=UserForm(request.POST)
         if form.is_valid():
             form.save()
+            print(form)
